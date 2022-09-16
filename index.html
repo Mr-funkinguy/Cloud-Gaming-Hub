@@ -9,9 +9,19 @@
       
     }
     
-    .ye {
-    border-radius: 5px;
-    }
+   
+/* [1] The container */
+.img-hover-zoom {
+  border-radius: 5px;
+  transition: transform .5s ease;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover {
+  transform: scale(1.1);
+}
     
     
     </style>
@@ -28,8 +38,9 @@
       <p2></p2>
       <p></p>
     </div>
-    <a href="https://mr-funkinguy.github.io/FNF-Neo-App-Test/"><img class="ye" src="https://github.com/Mr-funkinguy/Cloud-Gaming-Hub/blob/main/icons/neo.jpg?raw=true" alt="n" width="200" ></a>
-      
+
+    <a href="https://mr-funkinguy.github.io/FNF-Neo-App-Test/"><img class="img-hover-zoom" src="https://github.com/Mr-funkinguy/Cloud-Gaming-Hub/blob/main/icons/neo.jpg?raw=true" alt="n" width="200" ></a>
+    <a href="/tabi/index.html"><img class="img-hover-zoom" src="https://github.com/Mr-funkinguy/Cloud-Gaming-Hub/blob/main/icons/tabi.jpeg?raw=true" alt="n" width="180" ></a>
     </body>
     </html> 
     
